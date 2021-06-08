@@ -207,7 +207,19 @@ return [
     'Student_Delete_selected'               => 'حذف العناصر المحددة',
     'Student_Close'                         => 'إغلاق',
     'Student_Warning'                       => 'هل انت متأكد من عملية الحذف ؟ انت علي وشك حذف الطالب من قاعدة البيانات',
+
+    // Promotions
+    'promotions'                            => 'الترقيات',
+    'promotion_add'                         => 'ترقية جديدة',
+    'promotion_delete'                      => 'هل انت متأكد من عملية التراجع ؟؟؟',
+    'promotion_back'                        => 'تراجع',
+    'From'                                  => 'من',
+    'To'                                    => 'الترقية إلى',
     'Student_Promotion'                     => 'ترقية الطلاب',
     'Student_Promotion_Management'          => 'ادارة ترقية الطلاب',
+
+    'Graduate_students'                     => 'الطلاب المتخرجين',
+    'add_Graduate'                          => 'تخريج طالب',
+    'list_Graduate'                         => 'قائمة المتخرجين',
 
 ];

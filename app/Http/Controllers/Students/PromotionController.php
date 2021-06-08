@@ -15,16 +15,26 @@ class PromotionController extends Controller
     {
         $this->PromotionRepo = $PromotionRepo;
     }
-    
+
     // Index
     public function index()
     {
         return $this->PromotionRepo->index();
     }
 
+    public function create()
+    {
+        return $this->PromotionRepo->create();
+    }
+
     public function store(Request $request)
     {
         return $this->PromotionRepo->store($request);
+    }
+
+    public function destroy(Request $request)
+    {
+        return $this->PromotionRepo->destroy($request);
     }
 
 

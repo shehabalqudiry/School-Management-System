@@ -50,6 +50,50 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#students-menu"><i
+                                class="fas fa-user-graduate"></i>{{trans('trans.Students')}}<div class="pull-right"><i
+                                    class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="students-menu" class="collapse">
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse"
+                                    data-target="#Student_information">{{trans('trans.Student_information')}}<div class="pull-right"><i
+                                            class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="Student_information" class="collapse">
+                                    <li> <a href="{{ route('students.create') }}">{{ __('trans.Student_add') }}</a> </li>
+                                    <li> <a href="{{ route('students.index') }}">{{ __('trans.Students_list') }}</a> </li>
+                                </ul>
+                            </li>
+                    
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse"
+                                    data-target="#Students_upgrade">{{trans('trans.Student_Promotion')}}<div class="pull-right"><i
+                                            class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="Students_upgrade" class="collapse">
+                                    <li> <a href="{{ route('promotions.index') }}">{{ __('trans.Student_Promotion') }}</a> </li>
+                                    <li> <a href="{{ route('promotions.create') }}">{{ __('trans.Student_Promotion_Management') }}</a> </li>
+                                </ul>
+                            </li>
+                    
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse"
+                                    data-target="#Graduate">{{trans('trans.Graduate_students')}}<div class="pull-right"><i
+                                            class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="Graduate" class="collapse">
+                                    <li> <a href="{{-- route('Graduated.create') --}}">{{trans('trans.add_Graduate')}}</a> </li>
+                                    <li> <a href="{{-- route('Graduated.index') --}}">{{trans('trans.list_Graduate')}}</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    {{-- <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Students-menu">
                             <div class="pull-left"><i class="fas fa-user-graduate"></i><span
                                     class="right-nav-text">{{ __('trans.Students') }}</span></div>
@@ -60,9 +104,9 @@
                             <li> <a href="{{ route('students.create') }}">{{ __('trans.Student_add') }}</a> </li>
                             <li> <a href="{{ route('students.index') }}">{{ __('trans.Students_list') }}</a> </li>
                             <li> <a href="{{ route('promotions.index') }}">{{ __('trans.Student_Promotion') }}</a> </li>
-                            <li> <a href="{{ route('promotions.show') }}">{{ __('trans.Student_Promotion_Management') }}</a> </li>
+                            <li> <a href="{{ route('promotions.create') }}">{{ __('trans.Student_Promotion_Management') }}</a> </li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#Teachers-menu">
                             <div class="pull-left"><i class="fas fa-chalkboard-teacher"></i><span
